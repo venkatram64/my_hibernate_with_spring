@@ -45,4 +45,12 @@ class ActorServiceTest {
         Assertions.assertTrue( a != null);
     }
 
+    @Test
+    public void getActorByIdTest(){
+        Integer id = 202;
+        Actor a = actorService.getActorById(id);
+        Assertions.assertTrue( a != null);
+    }
+
+
 }
