@@ -33,4 +33,12 @@ class ActorServiceTest {
         Assertions.assertTrue(list.size() > 0);
     }
 
+    @Test
+    public void getActorByIdTest(){
+        Integer id = 202;
+        Actor a = actorService.getActorById(id);
+        Assertions.assertTrue( a != null);
+    }
+
+
 }
