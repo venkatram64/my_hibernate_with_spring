@@ -30,9 +30,9 @@ public class ActorService {
 
     public Actor update(Actor actor){
         Session session = sessionFactory.getCurrentSession();
-        session.beginTransaction();
+        //session.beginTransaction();
         session.save(actor);
-        session.getTransaction().commit();
+        //session.getTransaction().commit();
         Actor a = session.find(Actor.class, actor.getId());
         return session.find(Actor.class, actor.getId());
     }
@@ -52,9 +52,9 @@ public class ActorService {
     public void deleteActorById(Integer id){
         Session session = sessionFactory.getCurrentSession();
         Actor actor = session.find(Actor.class, id);
-        session.beginTransaction();
+        //session.beginTransaction();
         session.delete(actor);
-        session.getTransaction().commit();
+        //session.getTransaction().commit();
     }
 
     public Integer getFilmFromStock(int filmId, int storeId){

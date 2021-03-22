@@ -33,4 +33,16 @@ class ActorServiceTest {
         Assertions.assertTrue(list.size() > 0);
     }
 
+    @Test
+    public void updateActorTest(){
+        Integer id = 202;
+        Actor actor = new Actor();
+        actor.setId(id);
+        actor.setFirstName("Venkatram");
+        actor.setLastName("Veerareddy");
+        actorService.update(actor);
+        Actor a = actorService.getActorById( id);
+        Assertions.assertTrue( a != null);
+    }
+
 }
