@@ -12,6 +12,7 @@ import org.springframework.transaction.annotation.Transactional;
 
 import javax.persistence.ParameterMode;
 import java.util.List;
+import java.util.function.Predicate;
 
 @Repository
 @Transactional
