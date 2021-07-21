@@ -8,6 +8,7 @@ import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 
 public class MyUserService {
+
     private static Logger logger = Logger.getLogger(MyUserService.class.getName());
     private static ExecutorService threadPool = Executors.newFixedThreadPool(10);
 
